@@ -1,6 +1,6 @@
 .hero-section {
     background: url("https://static.pexels.com/photos/5402716/pexels-photo-5402716.jpeg?cs=srgb&dl=pexels-designdrunkard-5402716.jpg") 3% no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 60vh;
     text-align: center;
     display: -webkit-flex;
@@ -17,6 +17,9 @@
     color: white;
 }
 
+body {
+    color: black;
+}
 
   
       
