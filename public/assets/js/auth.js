@@ -1,1 +1,13 @@
-console.log('Media Client')
+const jsAuth = (req, res, next) => {
+    if (!req.session.user_id) {
+        res.redirect('/login');
+    } else {
+        next();
+    }
+};
+
+module.exports = jsAuth;
+
+
+
+console.log('auth')

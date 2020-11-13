@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizarding World of Media</title>
-
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <header>
     Wizarding World of Media
@@ -17,6 +17,19 @@
                 <a href="#login">Log In</a>
             </div>
 
+
+            <div>
+                <a href='#email-login'> Email:</a>
+                <a href='#password-login'> Password:</a>
+
+            </div>
+
+            {{#if loggedIn}}
+        <a href="/dashboard">Login</a>
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
 
             <!--After MVP successful, add these bells and whistles-->
 

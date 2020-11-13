@@ -4,24 +4,29 @@ const htmlRouter = require('./routes/htmlRouter');
 const exphbs = require('express-handlebars')
 
 
-const server = express();
+const app = express();
 
-server.use(express.static('public'));
+app.use(express.static('public'));
 
-server.use(htmlRouter);
+app.use(htmlRouter);
 
-server.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-server.set('view engine', 'handlebars');
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+
+
+
+app.get('/', (req, res) => {
+    res.render('home');
+});
 
 
 //route for getting quiz results (set up info from quiz code)
-server.get('/your-house', (res, req) => {
-    return res.render()
-})
-
+app.get('/house', (req, res) => {
+    return res.render('home', { layout: 'house' })
+});
 
 
 //PORT set to 3001 for now (open to whichever)
-server.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
+app.listen(PORT, () => {
+    console.log(`app listening on port ${PORT}`);
 });
