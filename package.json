@@ -1,0 +1,31 @@
+{
+    "name": "wizarding-world-media",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+        "handlebars": "^4.7.6",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.2.5",
+        "nodemon": "^2.0.6",
+        "sequelize": "^6.3.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ashwarters/wizarding-world-media.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ashwarters/wizarding-world-media/issues"
+    },
+    "homepage": "https://github.com/ashwarters/wizarding-world-media#readme"
+}

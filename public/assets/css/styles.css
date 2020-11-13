@@ -1,0 +1,78 @@
+#housesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-links {
+    float: right;
+}
+
+/* landing page */
+.hero-section {
+    background: url("https://static.pexels.com/photos/5402716/pexels-photo-5402716.jpeg?cs=srgb&dl=pexels-designdrunkard-5402716.jpg") 3% no-repeat;
+    background-size: 100%;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+    font-family: 'Fondamento', cursive;
+
+}
+
+.header-color {
+    color: white;
+    font-family: 'Fondamento', cursive;
+    font-weight: 900;
+}
+
+.header-color-small {
+    color: white;
+    font-family: arial;
+}
+
+
+body {
+    color: black;
+}
+
+
+.sign-in-form {
+    padding: 1rem 1.5em;
+    border-radius: .5rem;
+    background-color: #3d454f;
+  }
+  
+  .sign-in-form h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+  }
+
+  .username {
+      color: white;
+  }
+
+  .password {
+      color: white;
+  }
+
+  .sign-in-form-button {
+      color: white;
+  }
+
+
+  
+
