@@ -16,7 +16,11 @@ app.set('view engine', 'handlebars');
 
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('login');
+});
+
+app.get('/home', (req, res) => {
+    res.render('quiz')
 });
 
 
@@ -28,5 +32,5 @@ app.get('/house', (req, res) => {
 
 //PORT set to 3001 for now (open to whichever)
 app.listen(PORT, () => {
-    console.log(`app listening on port ${PORT}`);
+    console.log(`App listening on port ${PORT}`);
 });
