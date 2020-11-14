@@ -1,5 +1,5 @@
 const express = require('express');
-const { PORT } = require('./config');
+const { PORT } = require('./config/connection');
 const htmlRouter = require('./routes/htmlRouter');
 const exphbs = require('express-handlebars')
 
@@ -15,15 +15,28 @@ app.set('view engine', 'handlebars');
 
 
 
-app.get('/', (req, res) => {
-    res.render('home');
+//route for dashboard page
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard');
 });
 
 
-//route for getting quiz results (set up info from quiz code)
-app.get('/house', (req, res) => {
-    return res.render('home', { layout: 'house' })
+//route for login page
+app.get('/login', (req, res) => {
+    res.render('login');
 });
+
+//route for signup page
+app.get('/signup', (req, res) => {
+    res.render('signup');
+});
+
+//route for playlists page
+app.get('/playlists', (req, res) => {
+    res.render('playlists');
+});
+
+
 
 
 //PORT set to 3001 for now (open to whichever)
