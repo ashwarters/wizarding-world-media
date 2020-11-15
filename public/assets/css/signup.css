@@ -46,7 +46,7 @@ nav {
 /* landing page */
 .hero-section {
     background: url("https://static.pexels.com/photos/507410/pexels-photo-507410.jpeg?cs=srgb&dl=pexels-designdrunkard-507410.jpg") 3% no-repeat;
-    background-size: 100%;
+    background-size: 145%;
     height: 80vh;
     text-align: center;
     display: -webkit-flex;
