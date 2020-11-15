@@ -150,42 +150,7 @@ body {
 	overflow: hidden;
 }
 
-
-.sign-in-form {
-    padding: 1rem 1.5em;
-    border-radius: .5rem;
-    background-color: #3d454f;
-  }
-  
-  .sign-in-form h4 {
-    color: white;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    
-  }
-
-  .username {
-      color: white;
-  }
-
-  .password {
-      color: white;
-  }
-
-  .sign-in-form-button {
-      color: white;
-  }
-
-  .signup {
-      text-decoration: none;
-      color: goldenrod;
-  }
-
-
-  
-  .signup a:hover {
-    text-decoration: none;
+.quiz {
     color: white;
 }
 

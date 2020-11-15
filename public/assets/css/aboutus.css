@@ -5,14 +5,12 @@
   }
   
   :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
+    --primary-color: black;
+    --secondary-color: whitesmoke;
     --tertiary-color: #39a6b2;
     --primary-color-transparent: rgba(252,225,56, 0.8);
-    --secondary-color-transparent: rgba(2, 78, 118, 0.8);
+    --secondary-color-transparent: white;
   }
-
-
 
 
 #housesContainer {
@@ -240,7 +238,7 @@ body {
     color: var(--primary-color);
   }
   
-  .muggle-img {
+  .muggle-img-brandon {
     width: 100%;
     min-height: 300px;
     display: flex;
@@ -252,12 +250,12 @@ body {
     position: relative;
   }
   
-  .muggle-img::after {
+  .muggle-img-brandon::after {
     content: "";
     height: 100%;
     width: 100%;
     display: block;
-    background-image: linear-gradient(180deg, rgba(255,219,0) 0%, rgb(0, 0, 0) 100%);
+    background-image: linear-gradient(180deg, rgba(255,219,0) 0%, whitesmoke 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +264,58 @@ body {
   }
   
   
-  .muggle-img h3 {
+  .muggle-img-ashley {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .muggle-img-ashley::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(180deg, #AE0001 0%, whitesmoke 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+  }
+
+
+  .muggle-img-alexis {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .muggle-img-alexis::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(180deg, rgb(33, 5, 133) 0%, whitesmoke 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+  }
+
+  .muggle-img-brandon h3 {
     font-size: 28px;
     position: relative;
     top: 200px;
@@ -276,7 +325,7 @@ body {
     z-index: 1;
   }
   
-  .muggle-img h4 {
+  .muggle-img-brandon h4 {
     font-weight: lighter;
     font-size: 22px;
     position: relative;
@@ -287,14 +336,74 @@ body {
     transition-timing-function: ease-in-out;
   }
   
-  .muggle:hover .muggle-img::after {
+  .muggle:hover .muggle-img-brandon::after {
     opacity: 1;
   }
   
-  .muggle:hover .muggle-img h3, .muggle:hover .muggle-img h4 {
+  .muggle:hover .muggle-img-brandon h3, .muggle:hover .muggle-img-brandon h4 {
     transform: translateY(-200px);
   }
   
+
+  .muggle-img-alexis h3 {
+    font-size: 28px;
+    position: relative;
+    top: 200px;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .muggle-img-alexis h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition-duration: .6s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .muggle:hover .muggle-img-alexis::after {
+    opacity: 1;
+  }
+  
+  .muggle:hover .muggle-img-alexis h3, .muggle:hover .muggle-img-alexis h4 {
+    transform: translateY(-200px);
+  }
+  
+  .muggle-img-ashley h3 {
+    font-size: 28px;
+    position: relative;
+    top: 200px;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .muggle-img-ashley h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition-duration: .6s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .muggle:hover .muggle-img-ashley::after {
+    opacity: 1;
+  }
+  
+  .muggle:hover .muggle-img-ashley h3, .muggle:hover .muggle-img-ashley h4 {
+    transform: translateY(-200px);
+  }
+  
+
   .muggle-1 {
     background-image: url('../images/trainer-1.jpg');
   }
