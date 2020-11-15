@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizarding World of Media</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/aboutus.css" />
      <!-- Compressed CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,7 @@
         <li class="active"><a href="index.html">Wizarding World of Media</a></li>
         <li><a href="#your-house">Your House</a></li>
         <li><a href="#playlists">Playlists</a></li>
-        <li><a href="index.html">Log In</a></li>
+        <li><a href="#login">Log In</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
       
@@ -54,27 +54,12 @@
 
     <body>
         <div class="hero-section">
-            <div class="hero-section-text">
-              <h1 class="header-color">Wizarding World <br>of Media</h1>
-              <h5 class="header-color-small">Find out what movies or music <br>your House vibes with.</h5>
+            <div class="hero-section-text flex-row">
+              <h1 class="header-color flex-row">The Muggles Behind the Scenes</h1>
+              <h5 class="header-color-small flex-row"><strong>Check Out Their Repos!</strong></h5>
 
               <div id="three-container"></div>
 
-
-
-
-              <form class="form">
-                <div class="sign-in-form">
-                  <h4 class="text-center">Log In</h4>
-                  <label for="sign-in-form-username" class="username">Username</label>
-                  <input type="text" class="sign-in-form-username" id="sign-in-form-username">
-                  <label for="sign-in-form-password" class="password">Password</label>
-                  <input type="text" class="sign-in-form-password" id="sign-in-form-password">
-                  <button type="submit" class="sign-in-form-button">Login or <a href="signup.html">Sign Up</button>
-                </div>
-              </form>
-            </div>
-          </div>
         
          </body>
 
@@ -84,13 +69,75 @@
     <div id="housesContainer">
        
 
+        
+ <!-- "meet the trainers" section -->
+ <section id="your-muggles">
+ 
+
+    <!-- 2.2 repurposed .trainers for 3 column flexbox  -->
+    <div class="muggles">
+      <article class="muggle">
+        <div class="muggle-img muggle-1">
+          <div>
+            <h3>Arron Stephens</h3>
+            <h4>Speed / Strength</h4>
+          </div>
+        </div>
+        <div class="muggle-bio">
+          <h3 class="muggle-name">Arron Stephens</h3>
+          <h4 class="muggle-role">Speed / Strength</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!
+          </p>
+        </div>
+      </article>
+
+      <!-- 2.2 - moved image above content -->
+      <article class="muggle">
+        <div class="muggle-img muggle-2">
+          <div>
+            <h3>Joanna Gill</h3>
+            <h4>Endurance</h4>
+          </div>
+        </div>
+        <div class="muggle-bio">
+          <h3 class="muggle-name">Joanna Gill</h3>
+          <h4 class="muggle-role">Endurance</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!
+          </p>
+        </div>
+      </article>
+
+      <article class="muggle">
+        <div class="muggle-img muggle-3">
+          <div>
+            <h3>Harry "The Headband" Smith</h3>
+            <h4>Strength</h4>
+          </div>
+        </div>
+        <div class="muggle-bio">
+          <h3 class="muggle-name">Harry "The Headband" Smith</h3>
+          <h4 class="muggle-role">Strength</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!
+          </p>
+        </div>
+      </article>
     </div>
+  </section>
+
+  <footer>
+        
+  </footer>
 
 
-
-    <footer>
-        <h6><i>for educational purposes only</i></h6>
-    </footer>
 </body>
 
 <!--Added jQuery for future use!-->

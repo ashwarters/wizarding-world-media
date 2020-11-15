@@ -1,16 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --primary-color-transparent: rgba(252,225,56, 0.8);
+    --secondary-color-transparent: rgba(2, 78, 118, 0.8);
+  }
+
+
+
+
 #housesContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 
 #navbar {
     position: relative;
     overflow: hidden;
+    display: block;
+    text-decoration: none;
+    
+}
+
+nav {
+    height: 2vh;
+    text-decoration: none;
+
 }
 
 #nav-links {
     float: right;
+    color: black;
+    margin-top: 1px;
+    text-decoration: none;
 }
 
 /* landing page */
@@ -26,13 +56,85 @@
         -ms-flex-align: center;
             align-items: center;
     -webkit-justify-content: center;
-    font-family: 'Fondamento', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-style: bold;
 
+}
+
+
+/* nav bar from Foundation */
+.menu-hover-lines {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines li a {
+    padding: 0.75rem 0;
+    color: rgba(10, 10, 10, 0.5);
+    position: relative;
+    margin-left: 1rem;
+  }
+  
+  .menu-hover-lines li:first-child a {
+    margin-left: 0;
+  }
+  
+  .menu-hover-lines li.active > a {
+    background-color: transparent;
+  }
+  
+  .menu-hover-lines a:before,
+  .menu-hover-lines a::after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    background-color: goldenrod;
+    width: 0;
+  }
+  
+  .menu-hover-lines a::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-hover-lines a::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu-hover-lines a:hover,
+  .menu-hover-lines li.active > a {
+    color: #0a0a0a;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines a:hover::before,
+  .menu-hover-lines .active a::before,
+  .menu-hover-lines a:hover::after,
+  .menu-hover-lines .active a::after {
+    width: 100%;
+  }
+  
+ 
+/* end of nav bar from Foundation */ 
+  
+  
+
+.header-nav {
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    color: black;
 }
 
 .header-color {
     color: white;
-    font-family: 'Fondamento', cursive;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 900;
 }
 
@@ -44,6 +146,8 @@
 
 body {
     color: black;
+    margin: 0;
+	overflow: hidden;
 }
 
 
@@ -74,5 +178,6 @@ body {
   }
 
 
-  
-
+  footer {
+      text-align: center;
+  }
