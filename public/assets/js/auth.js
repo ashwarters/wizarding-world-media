@@ -7,7 +7,4 @@ const jsAuth = (req, res, next) => {
 };
 
 module.exports = jsAuth;
-
-
-
 console.log('auth')
