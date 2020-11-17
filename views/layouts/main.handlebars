@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizarding World of Media</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<header>
-    Wizarding World of Media
-    <div id="navbar">
-        <nav>
-            <div id="nav-links">
-                <a href="#home">Home</a>
-                <a href="#your-house">Your House</a>
-                <a href="#playlists">Playlists</a>
-           
 
-            {{#if loggedIn}}
-        <a href="/dashboard">Login</a>
-        <button id="logout" class="btn-no-style">Logout</button>
-        {{else}}
-        <a href="/login">Login</a>
-        {{/if}}
-         </div>
+
+<header class="header-nav">
+    <ul class="menu menu-hover-lines">
+    <li class='active'><a href= '/'> Wizarding World of Media</a> </li>
+               <li> <a href="/quiz">Sorting Hat Quiz</a></li>
+                <li><a href="/house">Your House</a></li>
+                <li><a href="/playlists">Playlists</a></li>
+                <li> <a href="/login">Login</a></li>
+
+         </ul>
 
             <!--After MVP successful, add these bells and whistles-->
 
@@ -31,17 +25,14 @@
                 <a href="#shows">Shows</a>
                 <a href="#chat">Chat</a>
             </div>-->
-
-
-        </nav>
-    </div>
 </header>
 <body>
     <main>
     {{{body}}}
     </main>
     <footer>
-        <p>"Don't let the muggles get you down." -Ron Weasley.⚡</p>
+        <p>"Don't let the muggles get you down." -Ron Weasley.⚡</p> <br>
+        <p>For educational purposes only.</p>
     </footer>
 </body>
 </html>

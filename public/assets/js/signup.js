@@ -1,2 +1,2 @@
-//const email = document.querySelector('#email-signup').value.trim();
-//const password = document.querySelector('#password-signup').value.trim();
+const email = document.getElementById('email-signup').value.trim();
+const password = document.getElementById('password-signup').value.trim();
