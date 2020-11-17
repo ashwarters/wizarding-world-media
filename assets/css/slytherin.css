@@ -1,0 +1,22 @@
+:root {
+    --darkGreen:  #1A472A; 
+    --lightGreen: #2A623D; 
+    --darksliver: #5D5D5D; 
+    --lightSliver:#AAAAAA; 
+    --black: #000000;
+}
+
+
+.work-feature-block {
+    padding: 10px 0;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+  }
+  
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  

@@ -1,0 +1,23 @@
+:root {
+    --darkRed: #740001;
+    --lightREd: #ae0001;
+    --darkGold: #d3a625;
+    --lightGold: #eeba30;
+    --black: #000000;
+    --sliver: #c0c0c0;
+}
+
+
+.work-feature-block {
+    padding: 10px 0;
+    border-top: 1px var(--darkRed) #cacaca;
+    border-bottom: 1px var(--lightREd) #cacaca;
+  }
+  
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  
