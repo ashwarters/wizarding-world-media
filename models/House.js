@@ -6,6 +6,12 @@ class House extends Model {
 }
 
 House.init({
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
+    },
     housename: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -16,8 +22,7 @@ House.init({
     playlist: {
         type: DataTypes.STRING,
         allowNull: false,
-    },
-
+    }
 
 }, {
     sequelize,
