@@ -1,0 +1,14 @@
+#housesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-links {
+    float: right;
+}

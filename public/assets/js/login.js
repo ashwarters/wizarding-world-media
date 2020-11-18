@@ -1,24 +1,15 @@
- function loginFormHandler(event) {
-     event.preventDefault();
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
 
-     const username = document.querySelector('#username-login').value.trim();
-     const password = document.querySelector('#password-login').value.trim();
+loginButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
 
-     if (username && password) {
-         const response = await fetch('/api/users/login', {
-             method: 'post',
-             body: JSON.stringify({
-                 username,
-                 password
-             }),
-             headers: { 'Content-Type': 'application/json' }
-         });
-
-         if (response.ok) {
-             document.location.replace('/dashboard');
-         } else {
-             alert(response.statusText);
-         }
-     }
- }
- document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+    if (username === "" && password === "") {
+        alert("You have successfully logged in.");
+        location.reload('/quiz');
+    } else {
+        window.alert(404);
+    }
+})
