@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 //express-session
 app.use(
     session({
-        secret: 'Fine keep your secrets!',
+        secret: 'alright then, keep your secrets!',
         resave: false,
         saveUninitialized: true,
         store: new SequelizeStore({
