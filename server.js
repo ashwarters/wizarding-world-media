@@ -1,64 +1,38 @@
 //dependencies
 const express = require('express');
-const { PORT } = require('./config/connection');
-const htmlRouter = require('./routes/htmlRouter');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
+const sequelize = require('./config/connection');
+const path = require('path');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 //express app
 const app = express();
-
-app.use(express.static('public'));
-
-app.use(htmlRouter);
-
-//working with handlebars
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
-
+const PORT = process.env.PORT || 3001;
 
 //express-session
 app.use(
     session({
         secret: 'Fine keep your secrets!',
         resave: false,
-        saveUninitialized: false
+        saveUninitialized: true,
+        store: new SequelizeStore({
+            db: sequelize
+        })
     })
 );
 
 
-//route for dashboard page
-app.get('/', (req, res) => {
-    res.render('signup');
-});
+//working with handlebars
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 
-//route for login page
-app.get('/login', (req, res) => {
-    res.render('login');
-});
 
-//route for signup page
-app.get('/signup', (req, res) => {
-    res.render('signup');
-});
-
-//route for playlists page
-app.get('/playlists', (req, res) => {
-    res.render('playlists');
-});
-
-//route for house page
-app.get('/house', (req, res) => {
-    res.render('house');
-});
-
-app.get('/quiz', (req, res) => {
-    res.render('quiz');
-});
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 //PORT set to 3001 for now (open to whichever)
 app.listen(PORT, () => {
     console.log(`app listening on port ${PORT}`);
+    sequelize.sync({ force: false })
 });
