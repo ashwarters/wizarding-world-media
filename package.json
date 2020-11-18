@@ -4,15 +4,23 @@
     "description": "",
     "main": "server.js",
     "dependencies": {
+<<<<<<< HEAD
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
         "express-handlebars": "^5.2.0",
         "express-session": "^1.17.1",
+=======
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+>>>>>>> 1a784111133f36c1b91229ab5c221acb95b55924
         "handlebars": "^4.7.6",
         "mysql": "^2.18.1",
         "mysql2": "^2.2.5",
         "nodemon": "^2.0.6",
+<<<<<<< HEAD
         "passport-spotify": "^1.1.0",
+=======
+>>>>>>> 1a784111133f36c1b91229ab5c221acb95b55924
         "sequelize": "^6.3.5"
     },
     "devDependencies": {},
