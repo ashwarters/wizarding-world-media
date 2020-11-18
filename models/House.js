@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connection.js');
 
 class House extends Model {
 
@@ -24,6 +24,6 @@ House.init({
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'House'
+    modelName: 'house'
 })
 module.exports = House;
