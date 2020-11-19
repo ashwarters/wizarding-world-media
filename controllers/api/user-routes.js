@@ -1,6 +1,16 @@
 const router = require('express').Router();
 
-const { User } = require('../../models');
+const { User, House } = require('../../models');
+
+router.get('/', (req, res) => {
+    User.findAll({
+        include: [
+            House
+        ]
+    }).then(dbUser => {
+        res.json(dbUser)
+    })
+})
 
 router.post('/', (req, res) => {
     User.create({
@@ -14,10 +24,13 @@ router.post('/', (req, res) => {
                 req.session.loggedIn = true;
                 res.json(dbUser)
             })
-        })
+        }).catch(err => {
+            console.log(err)
+            res.status(500).json(err);
+        });
 })
 
-
+///api/user/login
 router.post('/login', (req, res) => {
     User.findOne({
             where: {
@@ -38,7 +51,7 @@ router.post('/login', (req, res) => {
                 req.session.userId = dbUser.id;
                 req.session.username = dbUser.username;
                 req.session.loggedIn = true;
-                res.json(dbUser)
+                res.json({ user: dbUser })
             })
         })
 })
