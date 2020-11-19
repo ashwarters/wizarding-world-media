@@ -24,13 +24,17 @@ app.use(
 
 
 //working with handlebars
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+const hbs = exphbs.create({});
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 
-
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(require('./controllers/'));
 //PORT set to 3001 for now (open to whichever)
 app.listen(PORT, () => {
     console.log(`app listening on port ${PORT}`);
