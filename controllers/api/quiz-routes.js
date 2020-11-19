@@ -14,12 +14,14 @@ router.put('/:house', (req, res) => [
         },
         house_id: req.params.house
     })
-    .then(affectedRows => {
-        if (affectedRows > 0) {
-            res.status(200).end()
-        }
+    .then((houseData) => {
+
+        res.render('playlists', { layout: 'main', houseData })
     })
 
 ])
+
+
+
 
 module.exports = router;
