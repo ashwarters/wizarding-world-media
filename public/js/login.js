@@ -13,7 +13,7 @@ const loginHandler = function(event) {
             headers: { 'Content-Type': 'application/json' }
         }).then(function() {
             console.log('youre logged in')
-            document.location.replace('/')
+            document.location.replace('/api/quiz')
         }).catch(function(err) {
             console.log(err);
         })
