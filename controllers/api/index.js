@@ -5,3 +5,5 @@ const houseRoutes = require('./house-routes');
 
 router.use('/user', userRoutes);
 router.use('/house', houseRoutes);
+
+module.exports = router;
