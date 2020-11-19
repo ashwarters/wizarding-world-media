@@ -30,6 +30,12 @@ User.init({
             len: [6]
         }
     },
+    house_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    }
+
+
 
 
 }, {
