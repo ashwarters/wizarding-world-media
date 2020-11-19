@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
             const houses = dbHouse.map((house) => house.get({
                 plain: true
             }))
-            res.render('house', {
+            res.render('dashboard', {
                 layout: 'main',
                 houses
             })
