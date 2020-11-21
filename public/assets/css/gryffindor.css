@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0z;
+   --darkRed: #740001;
+    --lightRED: #AE0001;
+     --darkGold:#D3A625; 
+     --lightGold:#EEBA30; 
+     --black:#000000; 
+     --silver:#C0C0C0;
+}
+
+..body {
+    background-color: #D3A625;
+    
+  } 
+  .top {
+    background-color: #740001;
+  }
+  
+  .work-feature-block {
+    padding: 10px 0;
+    border-top: 1px solid #740001;
+    border-bottom: 1px solid #D3A625; 
+  }
+  .work-feature-block-header {
+    font-family: fantasy;
+    font-style: #740001;
+  }
+  
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  
+  

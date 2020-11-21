@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --darkBlue:#0E1A40;
+     --medBlue:#222F5B;
+      --silve:#5D5D5D;
+       --bronze:#946B2D;
+        --black:#000000;
+}
+
+.body {
+    background-color: #0e1a40;
+    
+  } 
+  .top {
+    background-color: #5d5d5d;
+    color: #000000;
+  }
+  
+  .work-feature-block {
+    padding: 10px 0;
+    border-top: 1px solid #5d5d5d;
+    border-bottom: 1px solid #D3A625; 
+  }
+  .work-feature-block-header {
+    font-family: fantasy;
+    color: white;
+  }
+  .p {
+    color: white;
+  }
+  .vid {
+    color: white;
+  }
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
