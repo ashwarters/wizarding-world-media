@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: black;
+    --secondary-color: whitesmoke;
+    --tertiary-color: #39a6b2;
+    --primary-color-transparent: rgba(252,225,56, 0.8);
+    --secondary-color-transparent: white;
+  }
+
+
+#housesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    
+}
+
+nav {
+    height: 2vh;
+    text-decoration: none;
+
+}
+
+#nav-links {
+    float: right;
+    color: black;
+    margin-top: 1px;
+    text-decoration: none;
+}
+
+/* landing page */
+.hero-section {
+    background: url("https://static.pexels.com/photos/5402713/pexels-photo-5402713.jpeg?cs=srgb&dl=pexels-designdrunkard-5402716.jpg") 3% no-repeat;
+    background-size: 100%;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: bold;
+
+}
+
+
+/* nav bar from Foundation */
+.menu-hover-lines {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines li a {
+    padding: 0.75rem 0;
+    color: rgba(10, 10, 10, 0.5);
+    position: relative;
+    margin-left: 1rem;
+  }
+  
+  .menu-hover-lines li:first-child a {
+    margin-left: 0;
+  }
+  
+  .menu-hover-lines li.active > a {
+    background-color: transparent;
+  }
+  
+  .menu-hover-lines a:before,
+  .menu-hover-lines a::after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    background-color: goldenrod;
+    width: 0;
+  }
+  
+  .menu-hover-lines a::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-hover-lines a::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu-hover-lines a:hover,
+  .menu-hover-lines li.active > a {
+    color: #0a0a0a;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines a:hover::before,
+  .menu-hover-lines .active a::before,
+  .menu-hover-lines a:hover::after,
+  .menu-hover-lines .active a::after {
+    width: 100%;
+  }
+  
+ 
+/* end of nav bar from Foundation */ 
+  
+  
+
+.header-nav {
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    color: black;
+}
+
+.header-color {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+}
+
+.header-color-small {
+    color: white;
+    font-family: arial;
+}
+
+
+body {
+    color: black;
+    margin: 0;
+	overflow: hidden;
+}
+
+
+
+
+.card-user-container {
+    margin-bottom: 1rem;
+    background-color: #fefefe;
+    color: #0a0a0a;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  .card-user-container .card-user-avatar .user-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 11.875rem;
+    height: 11.875rem;
+    padding: 0.9375rem;
+  }
+  
+  .card-user-container .card-user-avatar .user-image:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .card-user-container .card-user-bio {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-user-container .card-user-bio .location {
+    display: inline-block;
+    margin: 0 0.9375rem;
+    color: #767676;
+    font-size: 0.875rem;
+  }
+  
+  .card-user-container .card-user-bio .location-icon,
+  .card-user-container .card-user-bio .location-text {
+    display: inline-block;
+    padding: 0 0.3125rem;
+  }
+  
+  .card-user-container .card-user-social {
+    background: #e6e6e6;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-user-container .card-user-social ul {
+    display: inline-block;
+  }
+  
+  .card-user-container .card-user-social ul li {
+    margin: 0 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .card-user-container .card-user-social ul li:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .card-user-container .card-user-button {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  
+/* MEET THE TRAINERS START */
+.muggles {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* 2.2 - added flex */
+  .muggle {
+    flex: 1;
+    margin: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .muggle-img-brandon {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .muggle-img-brandon::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(180deg, rgba(255,219,0) 0%, whitesmoke 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+  }
+  
+  
+  .muggle-img-ashley {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .muggle-img-ashley::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(180deg, #AE0001 0%, whitesmoke 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+  }
+
+
+  .muggle-img-alexis {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .muggle-img-alexis::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(180deg, rgb(33, 5, 133) 0%, whitesmoke 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s linear;
+  }
+
+  .muggle-img-brandon h3 {
+    font-size: 28px;
+    position: relative;
+    top: 200px;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .muggle-img-brandon h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition-duration: .6s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .muggle:hover .muggle-img-brandon::after {
+    opacity: 1;
+  }
+  
+  .muggle:hover .muggle-img-brandon h3, .muggle:hover .muggle-img-brandon h4 {
+    transform: translateY(-200px);
+  }
+  
+
+  .muggle-img-alexis h3 {
+    font-size: 28px;
+    position: relative;
+    top: 200px;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .muggle-img-alexis h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition-duration: .6s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .muggle:hover .muggle-img-alexis::after {
+    opacity: 1;
+  }
+  
+  .muggle:hover .muggle-img-alexis h3, .muggle:hover .muggle-img-alexis h4 {
+    transform: translateY(-200px);
+  }
+  
+  .muggle-img-ashley h3 {
+    font-size: 28px;
+    position: relative;
+    top: 200px;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .muggle-img-ashley h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition-duration: .6s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .muggle:hover .muggle-img-ashley::after {
+    opacity: 1;
+  }
+  
+  .muggle:hover .muggle-img-ashley h3, .muggle:hover .muggle-img-ashley h4 {
+    transform: translateY(-200px);
+  }
+  
+
+  .muggle-1 {
+    background-image: url('../images/ash.png');
+  }
+  
+  .muggle-2 {
+    background-image: url('../images/trainer-2.jpg');
+  }
+  
+  .muggle-3 {
+    background-image: url('../images/alexis2.png');
+  }
+  
+  /* 2.2 - removed float and width */
+  .muggle-bio {
+    padding: 25px;
+    line-height: 1.3;
+  }
+  
+  .muggle-bio h3 {
+    font-size: 28px;
+    display: none;
+  }
+  
+  .muggle-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  
+  .muggle-bio p {
+    font-size: 17px;
+  }
+  /* TRAINER STYLES END */
+
+  footer {
+      text-align: center;
+  }
