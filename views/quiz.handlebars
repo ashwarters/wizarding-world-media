@@ -1,176 +1,132 @@
     <!--Container for quiz-->
-    <div id="quizContainer">
-        <section class="quiz-section quiz-fullscreen section section-dark" id="quiz">
-            <div class="section-background-image">
-            </div>
-            <div class="container">
-
-                <div id="introbox1" class="quizintrobox">
-                    <h3><b>What Will Your House Be?</b> </h3>
-                    <p>This quiz will ask you a series of questions and your responses will determine what type of Witch/Wizard you are. <br><br>This quiz is based on the acclaimed fantasy book series by<br><i> J.K. Rowling.</i></p>
-                    <button class="button_header button button-rounded-hover" id="startQuizBtn" onclick="startQuiz();document.getElementById('footer').scrollIntoView();" type="button">Let's Get You Sorted</button>
-                </div>
-            </div>
-        </section>
+      <h1>Let the Sorting Hat determine your Hogwarts fate:</h1>
 
 
-        <section class="section" id="questions">
-            <div class="container" id="lore_brief">
-
-            </div>
-
-
-            <div class="container" id="quiz-questions">
-
-                <div class="question invisible" id="question-1">
-                    <form>
-                        <h2 class="section-heading text-center">Which class would you like the most?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Potions
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Herbology
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Charms
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Defense Against the Dark Arts
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-2">
-                    <form>
-                        <h2 class="section-heading text-center">Which ability would you like to have?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Mind Control
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Super Strength
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Extreme Intelligence
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Fly
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-3">
-                    <form>
-                        <h2 class="section-heading text-center">Which animal would you choose for your Hogwarts pet?</h2>
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Rat
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Toad
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Owl
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Cat
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-4">
-                    <form>
-                        <h2 class="section-heading text-center">Which flavor of Bertie Bott's Beans would you like the best?</h2>
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Chocolate
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Peanut Butter
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio"> Licorice
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio"> Chili Pepper
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-5">
-                    <form>
-                        <h2 class="section-heading text-center">What would you have done about Hagrid's dragon?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Given it to someone in the Ministry of Magic
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Let it go
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio"> Told Dumbledore
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio"> Adopted it and raised it yourself
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-6">
-                    <form>
-                        <h2 class="section-heading text-center">Which position in Quidditch would you most like to play?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Bludger
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Chaser
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Keeper
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Seeker
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-7">
-                    <form>
-                        <h2 class="section-heading text-center">Which position in Quidditch would you most like to play?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Bludger
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Chaser
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Keeper
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Seeker
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-8">
-                    <form>
-                        <h2 class="section-heading text-center">If you had a portrait that guarded your room, what would it be?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Snake
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Unicorn
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Knight
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Fat Lady
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-9">
-                    <form>
-                        <h2 class="section-heading text-center">Who would you most like to turn into a toad?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Hagrid
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Professor Snape
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Voldemort
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Draco Malfoy
-                    </form>
-                </div>
-
-
-                <div class="question invisible" id="question-10">
-                    <form>
-                        <h2 class="section-heading text-center">What is your best quality?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Confidence
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Work Ethic
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Intellect
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">Courage
-                    </form>
-                </div>
-
-                <div class="question invisible" id="question-11">
-                    <form>
-                        <h2 class="section-heading text-center">What would you want to be when you grow up?</h2>
-                        <input data-endingsentence="Syltherin " name="rq" onclick="setAnswerButton()" type="radio">Member of the Ministry of Magic
-                        <input data-endingsentence="Hufflepuff " name="rq" onclick="setAnswerButton()" type="radio">Profesional Quidditch Player
-                        <input data-endingsentence="Ravenclaw " name="rq" onclick="setAnswerButton()" type="radio">Hogwarts Professor
-                        <input data-endingsentence="Gryffindor " name="rq" onclick="setAnswerButton()" type="radio">An Auror
-                    </form>
-                </div>
-
-
-                <div class="invisible" id="confirm_answer">
-                    <br>
-                    <br>
-                    <button class="button" onclick="nextQuestion()" type="button">Next Question</button>
-                </div>
-
-
-                <div class="invisible" id="results_screen">
-                    <h2 class="section-heading text-center">What Is Your House?</h2>
-                    <div id="generated_text">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="footer-section section" id="footer">
-            <div class="container">
-                <div class="footer-copyright">
-                    <ul class="list-inline right">
-                        <li>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+<form class='quizQuestions'>
+    <div>
+        <a id= "question1">Which class would you like the most?</a>
+        <ul>
+            <input name='q1' value='slytherin' type= "radio"> Potions 
+            <input name='q1' value='hufflepuff'type= "radio"> Herbology
+            <input name='q1' value='ravenclaw'type= "radio"> Charms
+            <input name='q1' value='gyriffindor'type= "radio"> Defense Against the Dark Arts
+        </ul>
     </div>
 
-    <script src="assets/js/mediaClient.js"></script>
-    <script src="js/vendor/jquery.js"></script>
+<div>
+<a id="question2"> Which ability would you like to have?</a>
+<ul>
+<input name='q2'value='slytherin'type= "radio"> Mind Control
+<input name='q2'value='hufflepuff'type= "radio"> Super Strength
+<input name='q2'value='ravenclaw'type= "radio"> Extreme Intelligence
+<input name='q2'value='gyriffindor'type= "radio"> Fly
+</ul>
+</div>
 
+<div>
+<a id="question3">Which animal would you choose for your Hogwarts pet?</a>
+<ul>
+<input name='q3'value='slytherin'type= "radio"> Rat
+<input name='q3'value='hufflepuff'type= "radio"> Toad
+<input name='q3'value='ravenclaw'type= "radio"> Owl
+<input name='q3'value='gyriffindor'type= "radio"> Cat
+</ul>
+</div>
+
+
+<div>
+<a id="question4">Which flavor of Bertie Bott's Beans would you like the best?</a>
+<ul>
+<input name='q4'value='slytherin'type= "radio"> Chocolate
+<input name='q4'value='hufflepuff'type= "radio"> Peanut Butter
+<input name='q4'value='ravenclaw'type= "radio"> Licorice
+<input name='q4'value='gyriffindor'type= "radio"> Chili Pepper
+</ul>
+</div>
+
+
+
+<div>
+<a id="question5">What would you have done about Hagrid's dragon?</a>
+<ul>
+
+<input name='q5'value='slytherin'type= "radio"> Given it to someone in the Ministry of Magic
+<input name='q5'value='hufflepuff'type= "radio"> Let it go
+<input name='q5'value='ravenclaw'type= "radio"> Told Dumbledore
+<input name='q5'value='gyriffindor'type= "radio"> Adopted it and raised it yourself
+</ul>
+</div>
+
+
+<div>
+<a id="question6">Which position in Quidditch would you most like to play?</a>
+<ul>
+
+<input name='q6'value='slytherin'type= "radio"> Bludger
+<input name='q6'value='hufflepuff'type= "radio"> Keeper
+<input name='q6'value='ravenclaw'type= "radio"> Chaser
+<input name='q6'value='gyriffindor'type= "radio"> Seeker
+</ul>
+</div>
+
+
+
+<div>
+<a id="question7">If you had a portrait that guarded your room, what would it be?</a>
+<ul>
+
+<input name='q7'value='slytherin'type= "radio"> Snake
+<input name='q7'value='hufflepuff'type= "radio"> Knight
+<input name='q7'value='ravenclaw'type= "radio"> Unicorn
+<input name='q7'value='gyriffindor'type= "radio"> Fat Lady
+</ul>
+</div>
+
+
+<div>
+<a id="question8">Who would you most like to turn into a toad?</a>
+<ul>
+
+<input name='q8'value='slytherin'type= "radio"> Hagrid
+<input name='q8'value='hufflepuff'type= "radio"> Professor Snape
+<input name='q8'value='ravenclaw'type= "radio"> Voldemort
+<input name='q8'value='gyriffindor'type= "radio"> Draco Malfoy
+</ul>
+</div>
+
+
+
+<div>
+<a id="question9">What is your best quality?</a>
+<ul>
+
+<input name='q9'value='slytherin' type= "radio"> Confidence
+<input name='q9'value='hufflepuff' type= "radio"> Work Ethic
+<input name='q9'value='ravenclaw' type= "radio"> Intellect
+<input name='q9'value='gyriffindor' type= "radio"> Courage
+</ul>
+</div>
+
+
+<div>
+<a id="question10">What would you want to be when you grow up?</a>
+<ul>
+
+<input name='q10'value='slytherin' type= "radio"> Member of the Ministry of Magic
+<input name='q10'value='hufflepuff' type= "radio"> Profesional Quidditch Player
+<input name='q10'value='ravenclaw' type= "radio"> Hogwarts Professor
+<input name='q10'value='gyriffindor' type= "radio"> An Auror 
+</ul>
+</div>
+
+<div>
+<button type="submit">Sort!</button>
+</form>
+</div>
+
+
+
+
+
+
+<script src='/js/quiz.js'></script>
