@@ -7,11 +7,11 @@ const router = require('express').Router();
 
 
 
-const spotifyId = '3defb4c0a6b2455e81596c332d9132c8'
+// const spotifyId = '3defb4c0a6b2455e81596c332d9132c8'
 
-const spotifySecret = '0e10c7c636a3464fbc2ec132d53f01ed'
+// const spotifySecret = '0e10c7c636a3464fbc2ec132d53f01ed'
 
 
-function getPlaylists() {
-    const getPlaylistsUrl = 'https://api.spotify.com/v1/'
-}
+// function getPlaylists() {
+//     const getPlaylistsUrl = 'https://api.spotify.com/v1/'
+// }
