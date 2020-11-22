@@ -16,11 +16,20 @@ router.put('/:house', (req, res) => [
     })
     .then((houseData) => {
 
-        res.render('playlists', { layout: 'main', houseData })
+        res.render('playlists.css', { layout: 'main', houseData })
     })
 
 ])
 
+// looking at an example, wanted to try this...
+router.get('/quiz'), (req, res) => {
+
+    res.render('quiz', {
+        isListEnabled: true,
+        style: 'quiz.css',
+    
+    })
+}
 
 
 
