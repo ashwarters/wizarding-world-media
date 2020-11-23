@@ -1,7 +1,5 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    overflow: auto;
 }
 
 :root {
@@ -73,6 +71,11 @@ nav {
     color: rgba(10, 10, 10, 0.5);
     position: relative;
     margin-left: 1rem;
+}
+
+.menu-hover-lines li button {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
 }
 
 .menu-hover-lines li:first-child a {
@@ -298,12 +301,73 @@ body {
     padding: 0 8px;
 }
 
-footer {
-    text-align: center;
-<<<<<<< HEAD
-    height: 3px;
-}
-=======
+div.quizContainer {
+    position: relative;
+    top: 10px;
+    flex: auto;
+    justify-content: center;
 }
 
->>>>>>> 257e72752f7fcfda443737ad179c64c18b3c3e47
+form.quizQuestions {
+    flex: auto;
+    justify-content: center;
+}
+
+.loginRedirect {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: bold;
+}
+
+#sendToLogin {
+    text-align: center;
+}
+
+.sortingHat {
+    flex: auto;
+    justify-content: center;
+    color: rgba(10, 10, 10, 0.5);
+}
+
+.hogwartsHouses {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.gryffindorContainer {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-start: 3;
+}
+
+.slytherinContainer {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-start: 5;
+}
+
+.hufflepuffContainer {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-start: 3;
+}
+
+.ravenclawContainer {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-start: 5;
+}
+
+footer {
+    position: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: auto;
+}

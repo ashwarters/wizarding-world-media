@@ -1,17 +1,15 @@
-const axios = require('axios');
-
-//gryffindor playlist
-axios.get('https://api.spotify.com/v1/playlists/6e5TyQ5YhFpo5SsnkrR8Yt', {
-    headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQDu3JhE-gTPvpN0hQIx9auBfLPxcgnY08S0Zj6XC_UHvMuyEH6k4PR9ij7tXbaxdoRIkXO-iWIzvCVb2CQ2-17eBM79CwkdHaJMZbYix8JjTCwEDM0NQNgv2NjbdCzrUDdse_rSS6hP9AEY',
-        'Accept': 'application/json'
-    }
-}).then(({ data }) => {
-    console.log(data);
-}).catch(err => {
-    console.log(err);
-});
+// //gryffindor playlist
+// axios.get('https://api.spotify.com/v1/playlists/6e5TyQ5YhFpo5SsnkrR8Yt', {
+//     headers: {
+//         'Content-Type': 'application/json',
+//         'Authorization': 'Bearer BQDu3JhE-gTPvpN0hQIx9auBfLPxcgnY08S0Zj6XC_UHvMuyEH6k4PR9ij7tXbaxdoRIkXO-iWIzvCVb2CQ2-17eBM79CwkdHaJMZbYix8JjTCwEDM0NQNgv2NjbdCzrUDdse_rSS6hP9AEY',
+//         'Accept': 'application/json'
+//     }
+// }).then(({ data }) => {
+//     console.log(data);
+// }).catch(err => {
+//     console.log(err);
+// });
 
 
 
@@ -55,3 +53,22 @@ axios.get('https://api.spotify.com/v1/playlists/6e5TyQ5YhFpo5SsnkrR8Yt', {
 // }).catch(err => {
 //     console.log(err);
 // })
+
+
+
+//Handlebars.registerHelper('link', function(object) {  return new Handlebars.SafeString(    "<a href='" + object.url + "'>" + object.text + "</a>"  );});
+
+const playlistHandler = function() {
+    fetch('/api/playlist/playlists', {
+        method: 'get',
+        headers: {
+
+            'Content-Type': 'application/json'
+        }
+    })
+    document.location.reload();
+    console.log('Hey working');
+}
+
+
+document.querySelector(".playlistButton").addEventListener('click', playlistHandler)
