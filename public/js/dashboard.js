@@ -9,4 +9,4 @@ const dashboardHandler = function(event) {
 
 
 
-document.querySelector('.sendToLogin').addEventListener('click', dashboardHandler);
+document.querySelector('#sendToLogin').addEventListener('click', dashboardHandler);
