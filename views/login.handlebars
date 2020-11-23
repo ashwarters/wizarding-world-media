@@ -1,13 +1,11 @@
-
-        <div class="hero-section">
+<main class="loginPage">
+        <div class=""></div>
 
             <div class="hero-section-text">
 
               <h1 class="header-color">Wizarding World <br>of Media</h1>
 
               <h5 class="header-color-small">Find out what music <br>your House vibes with.</h5>
-
-              <div id="three-container"></div>
 
               <form id="login-form">
 
@@ -19,13 +17,13 @@
                   <label for="login-form-password" class="password">Password:</label>
                   <input type="password" class="login-form-password" id="login-form-password">
 
-                  <button type="submit" class="login-form-button">Login!</button>
+    <button type="button" class="btn btn-dark" id='sendToLogin'>Login!</button>
                 
                 </div>
               </form>
             </div> <br>
-          <div>
-                        <h5>Dont have an account? Register below:</h5>
+          <div class='registerForm'>
+                        <h5 class="registerText">Dont have an account? Register below:</h5>
 
             <form id="signup-form">
   <div>
@@ -37,12 +35,14 @@
     <input type="password" id="signup-form-password" />
   </div>
   <div>
-    <button type="submit">Signup!</button>
+    <button type="button" class="btn btn-dark" id='sendToLogin'>Signup!</button>
   </div>
 </form>
           </div>
 
 
           </div>
+
+          </main>
           <script src="/js/login.js"></script>
           <script src='/js/register.js'></script>
