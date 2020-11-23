@@ -302,14 +302,20 @@ body {
 
 /*Login page*/
 
+main.loginPage {
+    background-image: url(/images/quiz-image.jpg);
+    background-size: 130%;
+}
+
 h1.header-color {
     font-family: 'Libre Baskerville', serif;
-    color: black;
+    color: white;
+    overflow: hidden;
 }
 
 h5.header-color-small {
     font-family: 'Libre Baskerville', serif;
-    color: black;
+    color: white;
 }
 
 div.login-form {
@@ -322,7 +328,7 @@ div.login-form {
 
 h5.registerText {
     font-family: 'Libre Baskerville', serif;
-    color: black;
+    color: white;
 }
 
 div.registerForm {
@@ -331,21 +337,6 @@ div.registerForm {
     width: 400px;
     padding: 5px;
     align-items: center;
-}
-
-
-/*End login page*/
-
-div.quizContainer {
-    position: relative;
-    top: 10px;
-    flex: auto;
-    justify-content: center;
-}
-
-form.quizQuestions {
-    flex: auto;
-    justify-content: center;
 }
 
 .loginRedirect {
@@ -358,11 +349,41 @@ form.quizQuestions {
     text-align: center;
 }
 
+
+/*End login page*/
+
+
+/*Quiz page*/
+
+div.quizContainer {
+    position: relative;
+    top: 10px;
+    flex: auto;
+    justify-content: center;
+}
+
+form.quizQuestions {
+    flex: auto;
+    justify-content: center;
+    color: black;
+}
+
 .sortingHat {
     flex: auto;
     justify-content: center;
     color: rgba(10, 10, 10, 0.5);
 }
+
+h4.sortingHat {
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+/*End quiz page*/
+
+
+/*dashboard page*/
 
 .hogwartsHouses {
     display: grid;
@@ -397,6 +418,50 @@ form.quizQuestions {
     grid-column-start: 3;
     grid-column-start: 5;
 }
+
+
+/*end of Dashboard page*/
+
+
+/*About Us page */
+
+div.aboutUs {
+    color: black;
+}
+
+h1.header-color.flex-row {
+    color: black;
+}
+
+div.ash-pic {
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div.brandon-pic {
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div.alexis-pic {
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/*end of About Us page*/
 
 footer {
     position: auto;

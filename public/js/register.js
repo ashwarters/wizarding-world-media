@@ -13,7 +13,7 @@ const signupHandler = function(event) {
             headers: { 'Content-Type': 'application/json' }
         }).then(function() {
             console.log('youre logged in')
-                //document.location.replace('/quiz')
+            document.location.replace('/api/quiz')
         }).catch(function(err) {
             console.log(err);
         })
