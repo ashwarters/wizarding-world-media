@@ -1,3 +1,5 @@
+/* styles begin */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -300,10 +302,128 @@ body {
 
 footer {
     text-align: center;
-<<<<<<< HEAD
-    height: 3px;
-}
-=======
 }
 
->>>>>>> 257e72752f7fcfda443737ad179c64c18b3c3e47
+/* end of styles */
+
+
+
+
+
+
+
+
+
+
+
+
+/* slytherin */
+
+:root {
+    --darkGreen:  #1A472A; 
+    --lightGreen: #2A623D; 
+    --darksliver: #5D5D5D; 
+    --lightSliver:#AAAAAA; 
+    --black: #000000;
+}
+
+
+.work-feature-block {
+    padding: 10px 0;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+  }
+  
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  /* end of slytherin */
+
+
+  /* ravenclaw */
+
+  :root {
+    --lightYellow:#FFF4B1;
+    --middleYellow:#FFED86;
+    --darkYallow:#FFDB00;
+    --darkGray: #60605C;
+    --black: #000000;
+    }
+    
+    
+    .work-feature-block {
+        padding: 10px 0;
+        border-top: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
+      }
+      
+      .work-feature-block-image {
+        display: block;
+        margin: auto;
+        padding: 10px 0;
+      }
+    
+
+
+  /* end of ravenclaw */
+
+
+
+  /* hufflepuff */
+
+  :root {
+    --lightYellow:#FFF4B1;
+    --middleYellow:#FFED86;
+    --darkYallow:#FFDB00;
+    --darkGray: #60605C;
+    --black: #000000;
+    }
+    
+    
+    .work-feature-block {
+        padding: 10px 0;
+        border-top: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
+      }
+      
+      .work-feature-block-image {
+        display: block;
+        margin: auto;
+        padding: 10px 0;
+      }
+      
+/* end of hufflepuff */
+
+
+
+/* gryffindor */
+
+:root {
+    --darkRed: #740001;
+    --lightREd: #ae0001;
+    --darkGold: #d3a625;
+    --lightGold: #eeba30;
+    --black: #000000;
+    --sliver: #c0c0c0;
+}
+
+
+.work-feature-block {
+    padding: 10px 0;
+    border-top: 1px var(--darkRed) #cacaca;
+    border-bottom: 1px var(--lightREd) #cacaca;
+  }
+  
+  .work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  /* end of gryffindor */
+
+
+  
