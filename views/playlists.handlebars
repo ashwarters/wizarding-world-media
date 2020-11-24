@@ -1,17 +1,17 @@
 
     <!--Playlist for corresponding house-->
-<h5>Hey {{dataValues.username}}!</h5>
-<h5>Your {{house.dataValues.housename}} Playlist</h5>
+<body>
+<div class='playlistPage'>
+<h5 class='playlistUsername'>Hey {{dataValues.username}}!</h5>
+<h5 class='playlistHouse'>Click below to reveal your {{house.dataValues.housename}} Playlist!</h5>
 <h5 style="visibility: hidden;" id='playlistHouse'> {{house.dataValues.playlist}} </h5>
 
 <div class='playlistContainer'>
-    {{!-- {{{link <iframe class="player" src=`https://open.spotify.com/embed/playlist/{{house.dataValues.playlist}}` width="300"
-        height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> }}} --}}
-       
-    
+
 </div>
 
-<button class='playlistButton'>Find</button>
-<!--${house.dataValues.playlist}-->
+<button type="submit" class="btn btn-dark" id='playlistButton'>Find</button>
 
+</div>
+</body>
 <script src='/js/playlist.js'></script>

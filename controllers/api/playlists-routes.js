@@ -24,13 +24,12 @@ router.get('/playlists/:id', (req, res) => {
     axios.get(`https://api.spotify.com/v1/playlists/${houseId}`, {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer BQA5uTccRbY-ao596KC8WRAOMVUN8epY1oag9nOVyYHCIRPetBUM7_sGOdFJpqJ0hVYhVbu0876e6ghqWo-gMLTYznUY7Nxtz5Rqj28eOHGtdPC0IN9Ks1UQC40TQ6hTUR9x6c__HtnXHybO',
+            'Authorization': 'Bearer BQAEXoQTN1BBSMqTTCrmrwQlFp-vcisWd4SeeWM5Ha5uATgUMOjTIwrqo5dSevbn_ZexTpEzUgg5tXCm2jiONDOBZ8SRzreN2WBkXnF_AVkORieNLfdNdQpf-qleelvktR21u1rxUSxHXxHm',
             'Accept': 'application/json'
         }
     }).then(data => {
         console.log('hello1', data.data);
         res.json(data.data)
-            //res.render('playlists', data)
     }).catch(err => {
         console.log(err);
     });

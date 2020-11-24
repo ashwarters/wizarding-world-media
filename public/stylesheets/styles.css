@@ -389,13 +389,22 @@ h4.sortingHat {
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    grid-template-columns: 5;
+    grid-template-rows: 5;
+    column-width: 60px;
 }
 
-.gryffindorContainer {
+div.gryffindorContainer {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-start: 3;
+    object-fit: fill;
+}
+
+img.gryff {
+    display: flex;
+    max-width: 111%;
 }
 
 .slytherinContainer {
@@ -417,6 +426,14 @@ h4.sortingHat {
     grid-row-end: 5;
     grid-column-start: 3;
     grid-column-start: 5;
+}
+
+div.loginRedirect {
+    padding-bottom: 30px;
+}
+
+h6#sortingHat {
+    color: black;
 }
 
 
@@ -463,11 +480,31 @@ div.alexis-pic {
 
 /*end of About Us page*/
 
+
+/*Playlist page*/
+
+iframe.player {
+    display: flex;
+    margin: auto;
+}
+
+h5.playlistUsername {
+    color: black;
+}
+
+h5.playlistHouse {
+    color: black;
+}
+
+
+/*end of Playlist page*/
+
 footer {
-    position: auto;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
     text-align: center;
     height: auto;
 }
