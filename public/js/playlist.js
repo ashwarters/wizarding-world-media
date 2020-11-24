@@ -11,6 +11,8 @@
 //     console.log(err);
 // });
 
+// const { response } = require("express");
+
 
 
 
@@ -59,15 +61,36 @@
 //Handlebars.registerHelper('link', function(object) {  return new Handlebars.SafeString(    "<a href='" + object.url + "'>" + object.text + "</a>"  );});
 
 const playlistHandler = function() {
-    fetch('/api/playlist/playlists', {
-        method: 'get',
-        headers: {
+    const houseId = document.getElementById('playlistHouse').textContent.trim();
+    console.log(houseId);
+    fetch(`/api/playlist/playlists/${houseId}`, {
+            method: 'get',
+            headers: {
 
-            'Content-Type': 'application/json'
-        }
-    })
-    document.location.reload();
-    console.log('Hey working');
+                'Content-Type': 'application/json'
+            }
+        }).then(response => {
+            // console.log(response.json(), 'hey working!!');
+            //console.log(response, 'hey working!!');
+            response.json().then(function(data) {
+                const playlistId = data.id
+                    //console.log(data.id);
+                document.querySelector('.playlistContainer')
+                const iframe = document.createElement('iframe')
+                iframe.setAttribute('src', `https://open.spotify.com/embed/playlist/${data.id}`)
+                iframe.setAttribute('class', `player`)
+                iframe.setAttribute('height', `380`)
+                iframe.setAttribute('width', `300`)
+                iframe.setAttribute('frameborder', `0`)
+                iframe.setAttribute('allow', `encrypted-media`)
+                iframe.setAttribute('allowtransparency', `true`)
+
+                document.body.appendChild(iframe)
+
+            })
+        })
+        // document.location.reload();
+        // console.log('Hey working', data);
 }
 
 

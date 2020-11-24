@@ -2,9 +2,9 @@
     <!--Playlist for corresponding house-->
 <h5>Hey {{dataValues.username}}!</h5>
 <h5>Your {{house.dataValues.housename}} Playlist</h5>
-{{!-- <h5> {{house.dataValues.playlist}} </h5> --
+<h5 style="visibility: hidden;" id='playlistHouse'> {{house.dataValues.playlist}} </h5>
 
-<div>
+<div class='playlistContainer'>
     {{!-- {{{link <iframe class="player" src=`https://open.spotify.com/embed/playlist/{{house.dataValues.playlist}}` width="300"
         height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> }}} --}}
        

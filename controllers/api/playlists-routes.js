@@ -19,16 +19,18 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/playlists', (req, res) => {
-    axios.get('https://api.spotify.com/v1/playlists/6e5TyQ5YhFpo5SsnkrR8Yt', {
+router.get('/playlists/:id', (req, res) => {
+    const houseId = req.params.id
+    axios.get(`https://api.spotify.com/v1/playlists/${houseId}`, {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer BQCIuHojWy2C7_hFuTajH29M_DQGynlSXx0MAgxEYVStJIpoUTc3cC-dZFQ1Mh75GZd0itUoHEPwSzMYu-X1KYTEMoXKK0nW6cqT6YzqvY0WcnjrVU7aEq0TxNMFOkRSDKMEuRIJXMNHMoh-',
+            'Authorization': 'Bearer BQA5uTccRbY-ao596KC8WRAOMVUN8epY1oag9nOVyYHCIRPetBUM7_sGOdFJpqJ0hVYhVbu0876e6ghqWo-gMLTYznUY7Nxtz5Rqj28eOHGtdPC0IN9Ks1UQC40TQ6hTUR9x6c__HtnXHybO',
             'Accept': 'application/json'
         }
     }).then(data => {
         console.log('hello1', data.data);
-        res.render('playlists', data)
+        res.json(data.data)
+            //res.render('playlists', data)
     }).catch(err => {
         console.log(err);
     });
