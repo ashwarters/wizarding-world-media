@@ -1,19 +1,23 @@
 # wizarding-world-media
 
-A Harry Potter themed playlist application. As the user you are invited to create an account by logging in, and directed to a quiz that will sort you into one of the four houes:
-Gryffindors,
-Ravenclaw,
-Slytherin,
-Hufflepuff.
+This Harry Potter themed RESTful API application invites the user to create an account (or by logging in) and will then be directed to a Hogwarts-specific quiz that sorts the user into one of the four houses based on their answers: Gryffindor,Ravenclaw,Slytherin,Hufflepuff. Each of these houses renders a tailored playlist via Spotify Api! The contributors of this project used the MVC paradigm to structure this project.
+
 
 # Technologies Used
 #Packages 
-*mySQL
-#Node
-#Foundation
+-mySQL (https://www.npmjs.com/package/mysql)
+-foundation-sites (https://www.npmjs.com/package/foundation-sites)
+-axios (https://www.npmjs.com/package/axios)
+-bcrypt (https://www.npmjs.com/package/bcrypt)
+-connect-session-sequelize (https://www.npmjs.com/package/connect-session-sequelize)
+-handlebars (https://www.npmjs.com/package/handlebars)
+-nodemon (https://www.npmjs.com/package/nodemon)
+-express-session (https://www.npmjs.com/package/express-session)
+-Spotify for Developers (https://developer.spotify.com/documentation/web-api/quick-start/)
 
 
 # Deployment 
+This application can be viewed on Heroku at:
 https://mighty-harbor-23986.herokuapp.com/
 
 
@@ -21,24 +25,4 @@ https://mighty-harbor-23986.herokuapp.com/
 
 ![](https://user-images.githubusercontent.com/65379991/99922235-7cf96800-2cfd-11eb-8183-9782a8b8f7b8.png)
  
-# Usage
 
-Node 
-*start the application
-
-```mysql2
-* To initiate the MySQL2 command line, type: `mysql -u root -p` in your command line and then your MySQL password.
-
-* To set up the database, type: `source schema.sql`
-
-* To seed the database, type: `source seeds.sql`
-
-Node start the application
-
-foundation
-to install (npm i foundation)
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropri
