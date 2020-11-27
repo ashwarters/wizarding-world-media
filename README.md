@@ -20,6 +20,8 @@ This Harry Potter themed RESTful API application invites the user to create an a
 This application can be viewed on Heroku at:
 https://mighty-harbor-23986.herokuapp.com/
 
+# Screen Recording of app in use
+https://drive.google.com/file/d/1WnEgt2e-1t4e9qHuQ87x2ptVxQm3IYq1/view
 
 # Screenshots
 
