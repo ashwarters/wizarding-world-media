@@ -4,7 +4,7 @@ This Harry Potter themed RESTful API application invites the user to create an a
 
 
 # Technologies Used
-#Packages 
+# Packages 
 -mySQL (https://www.npmjs.com/package/mysql)
 -foundation-sites (https://www.npmjs.com/package/foundation-sites)
 -axios (https://www.npmjs.com/package/axios)
